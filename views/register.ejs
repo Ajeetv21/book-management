@@ -1,0 +1,40 @@
+
+<link rel="stylesheet" href="/stylesheets/style.css">
+<%- include('partials/header.ejs')%>
+<%- include('partials/nav.ejs')%>
+<div class="registration-form">
+  
+    <div class="reg">
+         <div class="head">
+            <h1>Registered book here</h1>
+         </div>
+         <div class="input">
+            <form action="/register" method="post">
+
+            <input type="text" placeholder="Auther" name="auther"> <br> 
+
+           <select class="s1" name="country">
+            <option value="">Select Country</option>
+            <% countryNames.forEach(function(c){%>
+                        <option value="<%=c%>">
+                        <%=c%></option>
+            <%}) %>
+           </select><br> 
+
+            <input type="text" placeholder="Image link" name="imagelink"><br> 
+            <select class="s2" name="country">
+                <option value="">language</option>
+                <% languageNames.forEach(function(l){%>
+                            <option value="<%=l.name%>">
+                            <%=l.name%></option>
+                <%}) %>
+               </select><br><br> 
+            <input type="text" placeholder="Link" name="link"><br> 
+            <input type="number" placeholder="Pages" name="pages"><br> 
+            <input type="text" placeholder="Title" name="title"><br> 
+            <input type="text" placeholder="Year of Publication" name="publication">
+            <button>Register</button>
+         </div>
+      </form>
+    </div>
+</div>

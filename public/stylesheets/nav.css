@@ -1,0 +1,31 @@
+
+
+
+.nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   
+  }
+
+.nav img {
+    height: 8vh;
+}
+.nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 2vw;
+}
+
+.nav ul {
+    gap: 2vmax;
+}
+
+.nav a {
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 1.5vmax;
+}
